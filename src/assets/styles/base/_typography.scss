@@ -1,0 +1,40 @@
+/*
+  Typography
+  ==========================================================================
+*/
+
+/**
+ * @license
+ *
+ * Font Family: Helvetica Neue Bold
+ * Designed by: Frode Helland
+ * URL: https://www.fontshare.com/fonts/general-sans
+ * © 2021 Indian Type Foundry
+ *
+ * Font Styles:
+ * Helvetica Neue Bold
+ *
+*/
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: url("../fonts/Helvetica-Neue-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeueBold";
+}

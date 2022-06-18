@@ -1,0 +1,24 @@
+/* Utilities
+   ========================================================================== */
+
+@mixin bakanazo-truncate-lines($size) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $size;
+  overflow: hidden;
+}
+
+// Mixin
+
+@mixin bakanazo-flexbox-param($display, $align, $justify) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin bakanazo-font-details($size, $line-h, $weight, $color) {
+  font-size: $size;
+  line-height: $line-h;
+  font-weight: $weight;
+  color: $color;
+}

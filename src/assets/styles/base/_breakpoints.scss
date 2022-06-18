@@ -1,0 +1,113 @@
+/*
+Breakpoints
+==========================================================================
+*/
+
+// XX-small smartphones (landscape view)
+$screen-xxs: 295px;
+
+// X-small smartphones (landscape view)
+$screen-xs: 395px;
+
+// Small smartphones (landscape view)
+$screen-sm: 576px;
+
+// Medium tablets (portrait view)
+$screen-md: 767px;
+
+// Large Tablets and small desktops
+$screen-lg: 991.98px;
+
+// Large Tablets and small desktops
+$screen-ml: 1024px;
+
+// Extra-Large tablets and desktops
+$screen-xl: 1200px;
+
+// Extra-Large tablets and desktops
+$screen-xxl: 1350px;
+
+// X-small devices 295 (mobile)
+@mixin xx-small {
+  @media (max-width: #{$screen-xxs}) {
+    @content;
+  }
+}
+
+// X-small devices 395 (mobile)
+@mixin x-small {
+  @media (max-width: #{$screen-xs}) {
+    @content;
+  }
+}
+
+// Small devices 576 (mobile)
+@mixin small {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+// Medium devices 767 (landscape tablets)
+@mixin medium {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+// Medium min devices 767 (landscape tablets)
+@mixin min-medium {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+// Large devices 992 (large tablet, small desktop)
+@mixin large {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+// Min Large devices 992 (large tablet, small desktop)
+@mixin min-large {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+// large devices 1024 (desktop, ipad)
+@mixin m-large {
+  @media (max-width: #{$screen-ml}) {
+    @content;
+  }
+}
+
+// large min devices 1024 (desktop, ipad)
+@mixin min-m-large {
+  @media (min-width: #{$screen-ml}) {
+    @content;
+  }
+}
+
+// large devices 1200 (desktop, ipad)
+@mixin xl-large {
+  @media (max-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+// large devices 1350 (desktop, ipad)
+@mixin xxl-large {
+  @media (max-width: #{$screen-xxl}) {
+    @content;
+  }
+}
+
+// Landscape-lg
+@mixin landscape-large {
+  @media (orientation: landscape) and
+  (max-device-width: #{$screen-lg}) {
+    @content;
+  }
+}
