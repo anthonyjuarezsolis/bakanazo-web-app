@@ -1,0 +1,7 @@
+{
+  "name": "bakanazo-web-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
