@@ -1,3 +1,35 @@
+@use "/src/assets/styles/base/breakpoints" as breakpoints;
+@use "/src/assets/styles/base/colors" as colors;
+@use "/src/assets/styles/base/utilities" as utilities;
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: #eeea9a; //desktop
+
+  @include breakpoints.m-large {
+    background: red; //ipad pro
+  }
+
+  @include breakpoints.large {
+    background: orange; //ipad
+  }
+
+  @include breakpoints.medium {
+    background: maroon; //tablets normales
+  }
+
+  @include breakpoints.small {
+    background: yellow; //celulares
+  }
+  &__container {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 .example-spacer {
   flex: 1 1 auto;
 }

@@ -1,0 +1,48 @@
+/*
+  Reset
+  ==========================================================================
+*/
+
+*,
+html,
+body {
+  margin: 0;
+  font-family: "HelveticaNeueBold";
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+}
+
+// scrollbar custom
+
+// body::-webkit-scrollbar {
+//   width: 8px;
+// }
+// body::-webkit-scrollbar-track {
+//   background-color: #ffe8eb;
+// }
+// body::-webkit-scrollbar-thumb {
+//   background-color: #ff5a70;
+//   border-radius: 10px;
+// }
+// body::-webkit-scrollbar-button {
+//   display: none;
+// }
+
+a {
+  text-decoration: none;
+}
+
+b {
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+img {
+  user-select: none;
+}
