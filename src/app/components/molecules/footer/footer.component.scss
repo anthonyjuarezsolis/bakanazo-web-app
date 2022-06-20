@@ -3,6 +3,7 @@
 @use "/src/assets/styles/base/utilities" as utilities;
 
 .footer {
+  color: colors.$dark;
   @include breakpoints.large {
     display: none;
   }

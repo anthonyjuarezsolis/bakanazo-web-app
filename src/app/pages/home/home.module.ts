@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { MaterialModule } from 'src/app/material/material.module';
 import { HeaderComponent } from 'src/app/components/molecules/header/header.component';
 import { FooterComponent } from '../../components/molecules/footer/footer.component';
+import { LordIconModule } from 'src/app/lord-icon/lord-icon.module';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { FooterComponent } from '../../components/molecules/footer/footer.compon
     IonicModule,
     HomePageRoutingModule,
     MaterialModule,
+    LordIconModule,
   ],
   declarations: [HomeComponent, HeaderComponent, FooterComponent],
 })

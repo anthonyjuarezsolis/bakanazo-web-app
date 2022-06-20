@@ -9,11 +9,8 @@
             <mat-card-title>Shiba Inu</mat-card-title>
             <mat-card-subtitle>Dog Breed</mat-card-subtitle>
           </mat-card-header>
-          <img
-            mat-card-image
-            src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-            alt="Photo of a Shiba Inu"
-          />
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+            alt="Photo of a Shiba Inu" />
           <mat-card-content>
             <p>
               The Shiba Inu is the smallest of the six original and distinct
@@ -115,11 +112,7 @@
       </section>
       <mat-divider></mat-divider>
       <section>
-        <table
-          mat-table
-          [dataSource]="dataSourceTable"
-          class="mat-elevation-z8"
-        >
+        <table mat-table [dataSource]="dataSourceTable" class="mat-elevation-z8">
           <!--- Note that these columns can be defined in any order.
             The actual rendered columns are set as a property on the row definition" -->
 
@@ -194,18 +187,11 @@
             {{ node.name }}
           </mat-tree-node>
           <!-- This is the tree node template for expandable nodes -->
-          <mat-tree-node
-            *matTreeNodeDef="let node; when: hasChild"
-            matTreeNodePadding
-          >
-            <button
-              mat-icon-button
-              matTreeNodeToggle
-              [attr.aria-label]="'Toggle ' + node.name"
-            >
+          <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
+            <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'Toggle ' + node.name">
               <mat-icon class="mat-icon-rtl-mirror">
                 {{
-                  treeControl.isExpanded(node) ? "expand_more" : "chevron_right"
+                treeControl.isExpanded(node) ? "expand_more" : "chevron_right"
                 }}
               </mat-icon>
             </button>
@@ -215,11 +201,8 @@
       </section>
       <mat-divider></mat-divider>
       <section>
-        <button
-          mat-raised-button
-          matTooltip="Info about the action"
-          aria-label="Button that displays a tooltip when focused or hovered over"
-        >
+        <button mat-raised-button matTooltip="Info about the action"
+          aria-label="Button that displays a tooltip when focused or hovered over">
           Action
         </button>
       </section>
@@ -233,27 +216,15 @@
 
         <p>
           <mat-toolbar>
-            <button
-              mat-icon-button
-              class="example-icon"
-              aria-label="Example icon-button with menu icon"
-            >
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
               <mat-icon>menu</mat-icon>
             </button>
             <span>My App</span>
             <span class="example-spacer"></span>
-            <button
-              mat-icon-button
-              class="example-icon favorite-icon"
-              aria-label="Example icon-button with heart icon"
-            >
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
               <mat-icon>favorite</mat-icon>
             </button>
-            <button
-              mat-icon-button
-              class="example-icon"
-              aria-label="Example icon-button with share icon"
-            >
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
               <mat-icon>share</mat-icon>
             </button>
           </mat-toolbar>
@@ -261,27 +232,15 @@
 
         <p>
           <mat-toolbar color="primary">
-            <button
-              mat-icon-button
-              class="example-icon"
-              aria-label="Example icon-button with menu icon"
-            >
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
               <mat-icon>menu</mat-icon>
             </button>
             <span>My App</span>
             <span class="example-spacer"></span>
-            <button
-              mat-icon-button
-              class="example-icon favorite-icon"
-              aria-label="Example icon-button with heart icon"
-            >
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
               <mat-icon>favorite</mat-icon>
             </button>
-            <button
-              mat-icon-button
-              class="example-icon"
-              aria-label="Example icon-button with share icon"
-            >
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
               <mat-icon>share</mat-icon>
             </button>
           </mat-toolbar>
@@ -292,11 +251,7 @@
             <mat-toolbar-row>
               <span>My App</span>
               <span class="example-spacer"></span>
-              <button
-                mat-icon-button
-                class="example-icon"
-                aria-label="Example icon-button with menu icon"
-              >
+              <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
                 <mat-icon>menu</mat-icon>
               </button>
             </mat-toolbar-row>
@@ -304,18 +259,11 @@
             <mat-toolbar-row>
               <span>Second Line</span>
               <span class="example-spacer"></span>
-              <button
-                mat-icon-button
-                class="example-icon favorite-icon"
-                aria-label="Example icon-button with heart icon"
-              >
+              <button mat-icon-button class="example-icon favorite-icon"
+                aria-label="Example icon-button with heart icon">
                 <mat-icon>favorite</mat-icon>
               </button>
-              <button
-                mat-icon-button
-                class="example-icon"
-                aria-label="Example icon-button with share icon"
-              >
+              <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
                 <mat-icon>share</mat-icon>
               </button>
             </mat-toolbar-row>
@@ -342,9 +290,7 @@
           <button mat-raised-button color="accent">Accent</button>
           <button mat-raised-button color="warn">Warn</button>
           <button mat-raised-button disabled>Disabled</button>
-          <a mat-raised-button href="https://www.google.com/" target="_blank"
-            >Link</a
-          >
+          <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
         </div>
       </section>
       <mat-divider></mat-divider>
@@ -356,9 +302,7 @@
           <button mat-stroked-button color="accent">Accent</button>
           <button mat-stroked-button color="warn">Warn</button>
           <button mat-stroked-button disabled>Disabled</button>
-          <a mat-stroked-button href="https://www.google.com/" target="_blank"
-            >Link</a
-          >
+          <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
         </div>
       </section>
       <mat-divider></mat-divider>
@@ -370,9 +314,7 @@
           <button mat-flat-button color="accent">Accent</button>
           <button mat-flat-button color="warn">Warn</button>
           <button mat-flat-button disabled>Disabled</button>
-          <a mat-flat-button href="https://www.google.com/" target="_blank"
-            >Link</a
-          >
+          <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
         </div>
       </section>
       <mat-divider></mat-divider>
@@ -380,38 +322,19 @@
         <div class="example-label">Icon</div>
         <div class="example-button-row">
           <div class="example-flex-container">
-            <button
-              mat-icon-button
-              aria-label="Example icon button with a vertical three dot icon"
-            >
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
               <mat-icon>more_vert</mat-icon>
             </button>
-            <button
-              mat-icon-button
-              color="primary"
-              aria-label="Example icon button with a home icon"
-            >
+            <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
               <mat-icon>home</mat-icon>
             </button>
-            <button
-              mat-icon-button
-              color="accent"
-              aria-label="Example icon button with a menu icon"
-            >
+            <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
               <mat-icon>menu</mat-icon>
             </button>
-            <button
-              mat-icon-button
-              color="warn"
-              aria-label="Example icon button with a heart icon"
-            >
+            <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
               <mat-icon>favorite</mat-icon>
             </button>
-            <button
-              mat-icon-button
-              disabled
-              aria-label="Example icon button with a open in new tab icon"
-            >
+            <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
               <mat-icon>open_in_new</mat-icon>
             </button>
           </div>
@@ -423,38 +346,22 @@
         <div class="example-button-row">
           <div class="example-flex-container">
             <div class="example-button-container">
-              <button
-                mat-fab
-                color="primary"
-                aria-label="Example icon button with a delete icon"
-              >
+              <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
                 <mat-icon>delete</mat-icon>
               </button>
             </div>
             <div class="example-button-container">
-              <button
-                mat-fab
-                color="accent"
-                aria-label="Example icon button with a bookmark icon"
-              >
+              <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
                 <mat-icon>bookmark</mat-icon>
               </button>
             </div>
             <div class="example-button-container">
-              <button
-                mat-fab
-                color="warn"
-                aria-label="Example icon button with a home icon"
-              >
+              <button mat-fab color="warn" aria-label="Example icon button with a home icon">
                 <mat-icon>home</mat-icon>
               </button>
             </div>
             <div class="example-button-container">
-              <button
-                mat-fab
-                disabled
-                aria-label="Example icon button with a heart icon"
-              >
+              <button mat-fab disabled aria-label="Example icon button with a heart icon">
                 <mat-icon>favorite</mat-icon>
               </button>
             </div>
@@ -467,38 +374,22 @@
         <div class="example-button-row">
           <div class="example-flex-container">
             <div class="example-button-container">
-              <button
-                mat-mini-fab
-                color="primary"
-                aria-label="Example icon button with a menu icon"
-              >
+              <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
                 <mat-icon>menu</mat-icon>
               </button>
             </div>
             <div class="example-button-container">
-              <button
-                mat-mini-fab
-                color="accent"
-                aria-label="Example icon button with a plus one icon"
-              >
+              <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
                 <mat-icon>plus_one</mat-icon>
               </button>
             </div>
             <div class="example-button-container">
-              <button
-                mat-mini-fab
-                color="warn"
-                aria-label="Example icon button with a filter list icon"
-              >
+              <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
                 <mat-icon>filter_list</mat-icon>
               </button>
             </div>
             <div class="example-button-container">
-              <button
-                mat-mini-fab
-                disabled
-                aria-label="Example icon button with a home icon"
-              >
+              <button mat-mini-fab disabled aria-label="Example icon button with a home icon">
                 <mat-icon>home</mat-icon>
               </button>
             </div>
