@@ -1,14 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
-import { HomeComponent } from './home.component';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { IonicModule } from "@ionic/angular";
+import { FormsModule } from "@angular/forms";
+import { HomeComponent } from "./home.component";
 
-import { HomePageRoutingModule } from './home-routing.module';
-import { MaterialModule } from 'src/app/material/material.module';
-import { HeaderComponent } from 'src/app/components/molecules/header/header.component';
-import { FooterComponent } from '../../components/molecules/footer/footer.component';
-import { LordIconModule } from 'src/app/lord-icon/lord-icon.module';
+import { HomePageRoutingModule } from "./home-routing.module";
+import { MaterialModule } from "src/app/material/material.module";
+import { HeaderComponent } from "src/app/components/molecules/header/header.component";
+import { FooterComponent } from "../../components/molecules/footer/footer.component";
 
 @NgModule({
   imports: [
@@ -17,8 +16,8 @@ import { LordIconModule } from 'src/app/lord-icon/lord-icon.module';
     IonicModule,
     HomePageRoutingModule,
     MaterialModule,
-    LordIconModule,
   ],
   declarations: [HomeComponent, HeaderComponent, FooterComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomePageModule {}
