@@ -22,4 +22,12 @@
     width: 50%;
     @include utilities.bakanazo-flexbox-param(flex, center, space-evenly);
   }
+  &__icons {
+    width: 15%;
+    @include utilities.bakanazo-flexbox-param(flex, flex-end, space-evenly);
+    @include breakpoints.medium {
+      width: 30%;
+      display: none;
+    }
+  }
 }
