@@ -5,11 +5,18 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { MaterialModule } from 'src/app/material/material.module';
 import { HeaderComponent } from 'src/app/components/molecules/header/header.component';
 import { FooterComponent } from '../../components/molecules/footer/footer.component';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, HomePageRoutingModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    HomePageRoutingModule,
+    MaterialModule,
+  ],
   declarations: [HomeComponent, HeaderComponent, FooterComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
