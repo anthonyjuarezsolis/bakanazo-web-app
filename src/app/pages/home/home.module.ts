@@ -1,13 +1,17 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { MaterialModule } from 'src/app/material/material.module';
 import { HeaderComponent } from 'src/app/components/molecules/header/header.component';
 import { FooterComponent } from '../../components/molecules/footer/footer.component';
+import { MaterialComponentsComponent } from 'src/app/components/organisms/material-components/material-components.component';
+import { BannerComponent } from 'src/app/components/molecules/banner/banner.component';
+import { SaleComponent } from 'src/app/components/molecules/sale/sale.component';
+import { ProductsComponent } from 'src/app/components/molecules/products/products.component';
 
 @NgModule({
   imports: [
@@ -16,8 +20,17 @@ import { FooterComponent } from '../../components/molecules/footer/footer.compon
     IonicModule,
     HomePageRoutingModule,
     MaterialModule,
+    ReactiveFormsModule,
   ],
-  declarations: [HomeComponent, HeaderComponent, FooterComponent],
+  declarations: [
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    MaterialComponentsComponent,
+    BannerComponent,
+    ProductsComponent,
+    SaleComponent,
+  ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomePageModule {}

@@ -27,6 +27,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatBadgeModule } from '@angular/material/badge';
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const MaterialComponentsModules = [
@@ -57,6 +58,7 @@ const MaterialComponentsModules = [
   MatFormFieldModule,
   MatInputModule,
   MatCardModule,
+  MatBadgeModule,
 ];
 
 @NgModule({

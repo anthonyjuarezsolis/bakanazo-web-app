@@ -1,24 +1,67 @@
-<div class="header">
-  <div class="header__image">
-    <img src="./assets/NAZO.svg" width="80px" />
+<header class="header">
+  <div class="header__container">
+    <div class="header__options">
+      <button mat-button [matMenuTriggerFor]="optionsMenu">
+        <mat-icon>keyboard_arrow_down</mat-icon>
+        Options
+      </button>
+      <mat-menu #optionsMenu="matMenu" xPosition="after">
+        <button mat-menu-item>Option 1</button>
+        <button mat-menu-item>Option 2</button>
+        <button mat-menu-item>Option 3</button>
+      </mat-menu>
+    </div>
+
+    <div class="header__support">
+      <button mat-button>
+        <mat-icon>headset_mic</mat-icon>
+        Soporte las 24h
+      </button>
+    </div>
+    <div class="header__links">
+      <ul>
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="header__options">
-    <h1>Inicio</h1>
-    <h3>Producto</h3>
-    <h3>Contactanos</h3>
-  </div>
-  <div class="header__icons">
-    <lord-icon
-      src="https://cdn.lordicon.com/ndydpcaq.json"
-      trigger="hover"
-    ></lord-icon>
-    <lord-icon
-      src="https://cdn.lordicon.com/aoggitwj.json"
-      trigger="hover"
-    ></lord-icon>
-    <lord-icon
-      src="https://cdn.lordicon.com/dklbhvrt.json"
-      trigger="hover"
-    ></lord-icon>
+</header>
+<div class="toolbar">
+  <div class="toolbar__container">
+    <div class="toolbar__logo">
+      <div>
+        <img src="./assets/NAZO.svg" />
+      </div>
+    </div>
+    <div class="toolbar__search">
+      <mat-form-field appearance="outline">
+        <mat-label>Buscar</mat-label>
+        <input matInput>
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="toolbar__icons">
+      <lord-icon src="https://cdn.lordicon.com/aoggitwj.json" trigger="hover" matBadge="3" matBadgeColor="primary"
+        matBadgeSize="small">
+      </lord-icon>
+      <lord-icon src="https://cdn.lordicon.com/ndydpcaq.json" trigger="hover"></lord-icon>
+      <lord-icon src="https://cdn.lordicon.com/dklbhvrt.json" trigger="hover" [matMenuTriggerFor]="userMenu">
+      </lord-icon>
+      <mat-menu #userMenu="matMenu" xPosition="before">
+        <button mat-menu-item>Iniciar Seccion</button>
+        <button mat-menu-item>Historial</button>
+        <button mat-menu-item>Configuracion</button>
+      </mat-menu>
+    </div>
   </div>
 </div>
