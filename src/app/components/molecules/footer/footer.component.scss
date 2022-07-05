@@ -5,16 +5,30 @@
 .footer {
   color: colors.$dark;
   width: 100%;
-  height: 90px;
-  background: colors.$white;
   @include utilities.bakanazo-flexbox-param(flex, center, flex-start);
   box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.05);
+  &__container {
+    width: 100%;
+    height: 100%;
+    max-width: breakpoints.$screen-xxl;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    align-items: center;
+    justify-content: space-between;
+  }
   &__information {
-    @include utilities.bakanazo-flexbox-param(flex, center, space-evenly);
-    margin-left: 30px;
-    width: 80%;
+    @include utilities.bakanazo-flexbox-param(flex, center, space-between);
   }
   &__image {
-    width: 15%;
+    width: 100%;
+    @include utilities.bakanazo-flexbox-param(flex, center, flex-end);
+    > div {
+      width: 100%;
+      max-width: 6.5rem;
+      img {
+        width: 100%;
+      }
+    }
   }
 }

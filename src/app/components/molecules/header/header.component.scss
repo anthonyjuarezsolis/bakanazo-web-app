@@ -92,9 +92,9 @@
     width: 100%;
     @include utilities.bakanazo-flexbox-param(flex, center, flex-end);
     lord-icon {
-      width: 25px;
+      width: 28px;
       cursor: pointer;
-      margin-left: 10px;
+      margin-left: 14px;
     }
     .mat-badge-content {
       margin-top: 6px;

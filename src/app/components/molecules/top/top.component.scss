@@ -2,7 +2,7 @@
 @use "/src/assets/styles/base/colors" as colors;
 @use "/src/assets/styles/base/utilities" as utilities;
 
-.sale {
+.top {
   width: 100%;
   padding-top: 5rem;
   &__container {
@@ -63,12 +63,6 @@
         strong {
           font-size: 16px;
           color: colors.$dark;
-        }
-        p {
-          padding-top: 0.5rem;
-          font-size: 12px;
-          color: colors.$dark;
-          @include utilities.bakanazo-truncate-lines(4);
         }
       }
     }

@@ -12,6 +12,7 @@ import { MaterialComponentsComponent } from 'src/app/components/organisms/materi
 import { BannerComponent } from 'src/app/components/molecules/banner/banner.component';
 import { SaleComponent } from 'src/app/components/molecules/sale/sale.component';
 import { ProductsComponent } from 'src/app/components/molecules/products/products.component';
+import { TopComponent } from 'src/app/components/molecules/top/top.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { ProductsComponent } from 'src/app/components/molecules/products/product
     BannerComponent,
     ProductsComponent,
     SaleComponent,
+    TopComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
