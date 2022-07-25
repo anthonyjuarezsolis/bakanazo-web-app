@@ -26,12 +26,12 @@ import { TopComponent } from 'src/app/components/molecules/top/top.component';
   declarations: [
     HomeComponent,
     HeaderComponent,
-    FooterComponent,
-    MaterialComponentsComponent,
-    BannerComponent,
-    ProductsComponent,
-    SaleComponent,
-    TopComponent,
+    // FooterComponent,
+    // MaterialComponentsComponent,
+    // BannerComponent,
+    // ProductsComponent,
+    // SaleComponent,
+    // TopComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
