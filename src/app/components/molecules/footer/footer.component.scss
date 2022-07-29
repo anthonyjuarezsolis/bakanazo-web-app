@@ -8,10 +8,18 @@
     height: 352px;
     background: colors.$gray800;
     overflow: hidden;
+    @include breakpoints.large {
+      height: 1032px;
+    }
   }
   &__container-top {
     margin: 64px 80px 48px;
     height: 240px;
+    @include breakpoints.large {
+      padding: 0;
+      margin: 0;
+      height: auto;
+    }
   }
   &__content {
     margin: 0 32px;
@@ -19,10 +27,29 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include breakpoints.large {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      justify-content: normal;
+      height: 1032px;
+      width: 100%;
+      margin-top: 48px;
+    }
   }
   &__logo {
     width: 320px;
     height: 112px;
+    img {
+      // width: 142px;
+      height: 32px;
+      margin-bottom: 24px;
+    }
+    @include breakpoints.large {
+      padding: 0 16px;
+      height: 104px;
+      width: 100%;
+    }
   }
   &__logo-text {
     font-family: "Inter-normal";
@@ -32,6 +59,10 @@
     line-height: 24px;
     color: colors.$gray200;
     margin-top: 32px;
+    @include breakpoints.large {
+      margin: 0;
+      // margin-top: 24px;
+    }
   }
   &__links {
     padding: 0 0 0 64px;
@@ -46,6 +77,7 @@
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 16px;
+      margin-top: 0;
     }
     p {
       margin-bottom: 12px;
@@ -54,27 +86,55 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
+      cursor: pointer;
     }
     &-one {
       width: 140.8px;
+      @include breakpoints.large {
+        width: 155.5px;
+        height: 240px;
+      }
     }
     &-two {
       width: 140.8px;
+      @include breakpoints.large {
+        width: 155.5px;
+        height: 240px;
+      }
     }
     &-three {
       width: 140.8px;
+      @include breakpoints.large {
+        width: 155.5px;
+        height: 240px;
+      }
     }
     &-four {
       width: 140.8px;
+      @include breakpoints.large {
+        width: 155.5px;
+        height: 240px;
+      }
     }
     &-five {
       width: 140.8px;
+      @include breakpoints.large {
+        width: 155.5px;
+        height: 240px;
+      }
+    }
+    @include breakpoints.large {
+      margin: 48px 16px;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 3fr);
     }
   }
   &__badge {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    text-align: center;
   }
   &__complement {
     padding-right: 8px;
@@ -85,6 +145,11 @@
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 16px;
+    width: 42px;
+    height: 22px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
   }
 
   &__bottom {
@@ -94,15 +159,30 @@
     padding: 0 112px;
     height: 120px;
     background: colors.$gray40;
+    @include breakpoints.large {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      padding: 40px 16px;
+      height: 152px;
+    }
   }
   &__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: colors.$gray400;
+    @include breakpoints.large {
+      margin-top: 24px;
+    }
   }
   &__social {
     display: flex;
     gap: 27.66px;
+    cursor: pointer;
+    @include breakpoints.large {
+      gap: 24px;
+    }
   }
 }
