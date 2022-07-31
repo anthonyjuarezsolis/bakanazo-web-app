@@ -8,11 +8,11 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { MaterialModule } from 'src/app/material/material.module';
 import { HeaderComponent } from 'src/app/components/molecules/header/header.component';
 import { FooterComponent } from '../../components/molecules/footer/footer.component';
-import { MaterialComponentsComponent } from 'src/app/components/organisms/material-components/material-components.component';
-import { BannerComponent } from 'src/app/components/molecules/banner/banner.component';
-import { SaleComponent } from 'src/app/components/molecules/sale/sale.component';
-import { ProductsComponent } from 'src/app/components/molecules/products/products.component';
-import { TopComponent } from 'src/app/components/molecules/top/top.component';
+// import { MaterialComponentsComponent } from 'src/app/components/organisms/material-components/material-components.component';
+// import { BannerComponent } from 'src/app/components/molecules/banner/banner.component';
+// import { SaleComponent } from 'src/app/components/molecules/sale/sale.component';
+// import { ProductsComponent } from 'src/app/components/molecules/products/products.component';
+// import { TopComponent } from 'src/app/components/molecules/top/top.component';
 
 @NgModule({
   imports: [
