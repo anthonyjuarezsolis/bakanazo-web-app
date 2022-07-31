@@ -26,7 +26,7 @@ import { TopComponent } from 'src/app/components/molecules/top/top.component';
   declarations: [
     HomeComponent,
     HeaderComponent,
-    // FooterComponent,
+    FooterComponent,
     // MaterialComponentsComponent,
     // BannerComponent,
     // ProductsComponent,
