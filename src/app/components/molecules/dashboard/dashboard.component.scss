@@ -37,4 +37,69 @@
     color: colors.$gray30;
     cursor: pointer;
   }
+  &__avatar {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__actions {
+    gap: 16px;
+    @include utilities.bakanazo-flexbox-param(flex, center, center);
+    flex-direction: row;
+    padding-right: 50px;
+  }
+  &__settings {
+    background: colors.$gray300;
+    width: 40px;
+    height: 40px;
+    @include utilities.bakanazo-flexbox-param(flex, center, center);
+  }
+  &__bells {
+    background: colors.$primary600;
+    @include utilities.bakanazo-flexbox-param(flex, center, center);
+    width: 40px;
+    height: 40px;
+  }
+  &__image {
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    border-radius: 50%;
+    @include utilities.bakanazo-flexbox-param(flex, center, center);
+    & img {
+      width: 100%;
+      // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+  }
+  &__text {
+    padding-left: 16px;
+    & p {
+      font-size: 12px;
+    }
+  }
+  &__bagde {
+    @include utilities.bakanazo-flexbox-param(flex, center, center);
+  }
+  &__title {
+    font-family: "Inter-medium";
+    font-weight: 500;
+
+    line-height: 28px;
+    color: colors.$gray900;
+    & h1 {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+  &__only-bagde {
+    background: colors.$primary50;
+    border-radius: 16px;
+    @include utilities.bakanazo-flexbox-param(flex, center, center);
+    margin-left: 8px;
+    font-weight: 500;
+    line-height: 18px;
+    color: colors.$primary700;
+    padding: 2px 8px;
+  }
 }

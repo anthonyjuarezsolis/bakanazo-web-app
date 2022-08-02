@@ -150,6 +150,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
+    @include utilities.bakanazo-flexbox-param(flex, center, center);
   }
 
   &__bottom {
