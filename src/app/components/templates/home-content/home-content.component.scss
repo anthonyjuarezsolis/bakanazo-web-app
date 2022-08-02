@@ -148,7 +148,10 @@
       gap: 40px;
       & > div {
         height: 48px;
-        background: colors.$primary600;
+        // background: colors.$primary600;
+        & img {
+          width: 100%;
+        }
       }
     }
   }
