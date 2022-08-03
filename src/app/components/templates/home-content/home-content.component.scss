@@ -21,7 +21,7 @@
     &--head {
       width: 292px;
       height: 32px;
-      background: colors.$primary50;
+      background: colors.$gray300;
       padding: 4px;
       border-radius: 16px;
       @include utilities.bakanazo-flexbox-param(flex, center, auto);
@@ -39,7 +39,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
-        color: colors.$primary700;
+        color: colors.$gray900;
       }
     }
     &--text {
