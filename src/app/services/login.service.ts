@@ -57,11 +57,10 @@ export class LoginService {
       emailVerified: user.emailVerified,
     };
 
-    console.log(userData);
-
     if (userData.email) {
       localStorage.setItem('user', JSON.stringify(userData));
       JSON.parse(localStorage.getItem('user')!);
+      console.log(userData);
       this.router.navigate(['home']);
 
       // return userRef.set(userData, {

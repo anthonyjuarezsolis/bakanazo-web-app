@@ -11,9 +11,17 @@
         <p>Envios</p>
       </div>
     </div>
-    <div class="header__button">
-      <!-- <button class="header__button-primary">x</button> -->
-      <button class="header__button-second">Ingresar</button>
+    <div class="header__loggin" *ngIf="userLogged">
+      <div class="header__loggin--photo">
+        <img [src]=" userLogged.photoURL" [alt]='"image-"+userLogged.name' (click)="toLogout()">
+      </div>
+      <div class=" header__loggin--info">
+        <strong>{{userLogged.displayName}}</strong>
+        <p>{{userLogged.email}}</p>
+      </div>
+    </div>
+    <div class="header__loggin" *ngIf="!userLogged">
+      <button (click)="toLogin()">Ingresar</button>
     </div>
     <div class="header__iconMenu">
       <img src="./assets/svg/header/icon-menu.svg" />
