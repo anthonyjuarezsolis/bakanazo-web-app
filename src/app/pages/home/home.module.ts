@@ -10,7 +10,6 @@ import { HeaderComponent } from 'src/app/components/molecules/header/header.comp
 import { FooterComponent } from '../../components/molecules/footer/footer.component';
 import { DashboardComponent } from '../../components/molecules/dashboard/dashboard.component';
 import { HomeContentComponent } from 'src/app/components/templates/home-content/home-content.component';
-import { ManuelComponent } from 'src/app/components/molecules/manuel/manuel.component';
 // import { MaterialComponentsComponent } from 'src/app/components/organisms/material-components/material-components.component';
 // import { BannerComponent } from 'src/app/components/molecules/banner/banner.component';
 // import { SaleComponent } from 'src/app/components/molecules/sale/sale.component';
@@ -32,7 +31,6 @@ import { ManuelComponent } from 'src/app/components/molecules/manuel/manuel.comp
     FooterComponent,
     DashboardComponent,
     HomeContentComponent,
-    ManuelComponent,
     // MaterialComponentsComponent,
     // BannerComponent,
     // ProductsComponent,

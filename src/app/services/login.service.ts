@@ -59,20 +59,17 @@ export class LoginService {
 
     console.log(userData);
 
-    if (
-      userData.email.includes('@getontop.com') ||
-      userData.email.includes('@ontop.ai')
-    ) {
+    if (userData.email) {
       localStorage.setItem('user', JSON.stringify(userData));
       JSON.parse(localStorage.getItem('user')!);
-      this.router.navigate(['directory']);
+      this.router.navigate(['home']);
 
-      return userRef.set(userData, {
-        merge: true,
-      });
-    } else {
-      this.emitOpenModal(true);
-      return undefined;
+      // return userRef.set(userData, {
+      //   merge: true,
+      // });
+      // } else {
+      //   this.emitOpenModal(true);
+      //   return undefined;
     }
   }
 
