@@ -12,52 +12,56 @@ export class ProductsComponent implements OnInit {
   ngOnInit() {
     this.cardArray = [
       {
-        img: './assets/img/product-1.png',
-        title: 'UX review presentations',
+        img: 'https://app.fexpress.pe/storage/daily-deals/0DKncvwRIhqrpsfdzU9CyBIjbisQCpWmpJ9BfO2k.jpeg',
+        title:
+          'MSI Stealth 15M 15.6 144Hz FHD Intel Core i7-11375H, NVIDIA GeForce RTX 3060, 16GB, 512GB SSD',
         paragrafe:
-          'How do you create compelling presentations that wow your colleagues and impress your managers?',
+          'Visual Performance: The 15.6” 144hz display delivers true-to-life images with a high refresh rate so you can see every frame of the game.',
       },
       {
-        img: './assets/img/product-2.png',
-        title: 'Migrating to Linear 101',
+        img: 'https://app.fexpress.pe/storage/daily-deals/8pskJSxEROVirtuAnDNIdK39YLGcOV7MAHKOowQf.jpeg',
+        title: 'Beats Studio3 Wireless Noise Cancelling Over-Ear Headphones',
         paragrafe:
-          'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.',
+          'With fast Fuel, a 10-minute charge gives 3 hours of play when battery is low. Rechargeable lithium ion battery',
       },
       {
-        img: './assets/img/product-3.png',
-        title: 'Building your API Stack',
+        img: 'https://app.fexpress.pe/storage/daily-deals/duVZ9BCcjJMhCgXG4IUZ8rCJtd04nusuadGVo5BX.jpeg',
+        title: 'Google Pixel 6a 128GB',
         paragrafe:
-          'The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.',
+          'Google Pixel 6a se adapta a ti; es superrápido y seguro y funciona con Google Tensor, el primer chip diseñado por Google solo para Pixel',
       },
       {
-        img: './assets/img/product-4.png',
-        title: 'Bill Walsh leadership lessons',
-        paragrafe:
-          'Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?',
+        img: 'https://app.fexpress.pe/storage/daily-deals/3d1X0EtGaeIz1M6UhksiO3ugCtJAbct15nWTVeCT.jpeg',
+        title: 'Samsung Tab S8+ 256GB',
+        paragrafe: 'Colores Disponibles: Silve, Graphite y Pink Gold',
       },
       {
-        img: './assets/img/product-5.png',
-        title: 'PM mental models',
+        img: 'https://app.fexpress.pe/storage/daily-deals/bXxHRTGJPvpXUPMuxJ00H6bviECnSNn1NlkZHulH.jpeg',
+        title:
+          'ASUS TUF DASH 15.6 - Intel 11th Gen I7 - 16GB - NVIDIA GeForce RTX 3060 - 512GB SSD',
         paragrafe:
-          'Mental models are simple expressions of complex processes or relationships.',
+          'Reams of high-bandwidth DDR4 RAM to smoothly run your graphics-heavy PC games and video-editing applications, as well as numerous programs and browser tabs all at once.',
       },
       {
-        img: './assets/img/product-6.png',
-        title: 'What is Wireframing?',
+        img: 'https://app.fexpress.pe/storage/daily-deals/4IAguMgYxBviShPYbJmTY0tgMzuSkp7lV8D4BO11.jpeg',
+        title:
+          'Acer Nitro 5 Intel Core I7-11800H | NVIDIA GeForce RTX 3050 Ti | 15.6 FHD 144Hz IPS | 8GB DDR4 | 512GB NVMe SSD',
         paragrafe:
-          'Introduction to Wireframing and its Principles. Learn from the best in the industry.',
+          'Stay Cool Under Pressure: When heavy use requires an added boost, Acer CoolBoost technology increases fan speed by 10% and CPU/GPU cooling by 9% compared to auto mode, overall increasing thermal performance by 25% for better gaming comfort',
       },
       {
-        img: './assets/img/product-7.png',
-        title: 'How collaboration makes us better designers',
+        img: 'https://app.fexpress.pe/storage/daily-deals/fKKydt6j1ELQFUPEWyDLfx0eSNljKedntspW23GQ.jpeg',
+        title:
+          'Acer Predator Triton 300 SE 14 144Hz Intel 11th Gen i7 - GeForce RTX 3060 - 16GB DDR4 - 512GB SSD',
         paragrafe:
-          'Collaboration can make our teams stronger, and our individual designs better.',
+          'The new 11th Gen Intel® Core™ H Series processors for Ultraportable Gaming are made to push frames while making travel easy. Now clocking up to 5.0GHz Turbo with up to 4 cores and 8 threads, you get all the performance you need and the freedom to game anywhere.',
       },
       {
-        img: './assets/img/product-8.png',
-        title: 'Our top 10 Javascript frameworks to use',
+        img: 'https://app.fexpress.pe/storage/daily-deals/ai7Eu4MiBWuZle3WEYpvHC6dOG3m1QLiqaif4Pvh.jpeg',
+        title:
+          'MSI Pulse GL66 15.6 144Hz FHD Intel Core i7-11800H, NVIDIA GeForce RTX 3070, 16GB, 512GB SSD',
         paragrafe:
-          'JavaScript frameworks make development easy with extensive features and functionalities.',
+          'Supercharged Graphics: The MSI GL66 is powered by NVIDIA GeForce RTX, take on todays most popular games with these performance graphics.',
       },
     ];
   }

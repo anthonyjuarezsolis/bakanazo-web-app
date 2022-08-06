@@ -1,121 +1,121 @@
 <section class="products">
-  <div class="products__start">
-    <div class="products__container">
-      <div class="products__title">
-        <div class="products__heading">
+  <div class="products__container">
+    <div class="products__start">
+      <div class="products__start-container">
+        <div class="products__title">
+          <div class="products__heading">
+            <div>
+              <h6>Productos</h6>
+            </div>
+            <h1>Ofertas del Día</h1>
+          </div>
+          <p>Un listado de productos especiales, seleccionados para ti</p>
+        </div>
+        <div class="products__information" *ngIf="false">
+          <div class="products__email">
+            <div class="products__input">
+              <p>Enter your email</p>
+            </div>
+            <p>We care about your data in our privacy policy.</p>
+          </div>
+          <button class="products__button">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <div class="products__end">
+      <div class="products__room">
+        <div class="products__sidebar">
+          <div class="products__search">
+            <div class="products__icon">x</div>
+            <div class="products__text">
+              <p>Buscar Producto</p>
+            </div>
+          </div>
+          <div class="products__table">
+            <div class="products__category">
+              <p>Categorias</p>
+            </div>
+            <div class="products__options">
+              <div class="products__options-one">
+                <p>Ver Todos</p>
+              </div>
+              <div class="products__options-two">
+                <p>Tecnologia</p>
+              </div>
+              <div class="products__options-three">
+                <p>Ropa</p>
+              </div>
+              <div class="products__options-four">
+                <p>Especias / Condimento</p>
+              </div>
+              <div class="products__options-five">
+                <p>Accesorios</p>
+              </div>
+              <div class="products__options-six">
+                <p>Calzados</p>
+              </div>
+              <div class="products__options-seven">
+                <p>Otros</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__cards">
+          <div class="products__cards-example">
+            <div class="products__card" *ngFor="let card of cardArray">
+              <img [src]="card.img" />
+              <div class="products__elements-one">
+                <div>
+                  <h1>{{ card.title }}</h1>
+                  <p>{{ card.paragrafe }}</p>
+                </div>
+                <div>
+                  <button class="products__button-one">Read post</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products__pagination">
+        <div class="products__button-start">
           <div>
-            <h6>Resources</h6>
+            <p>x</p>
           </div>
-          <h1>Untitled Blog</h1>
-        </div>
-        <p>
-          Tool and strategies modern teams need to help their companies grow.
-        </p>
-      </div>
-      <div class="products__information">
-        <div class="products__email">
-          <div class="products__input">
-            <p>Enter your email</p>
-          </div>
-          <p>We care about your data in our privacy policy.</p>
-        </div>
-        <button class="products__button">Get Started</button>
-      </div>
-    </div>
-  </div>
-  <div class="products__end">
-    <div class="products__room">
-      <div class="products__sidebar">
-        <div class="products__search">
-          <div class="products__icon">x</div>
-          <div class="products__text">
-            <p>Search</p>
+          <div>
+            <p>Previous</p>
           </div>
         </div>
-        <div class="products__table">
-          <div class="products__category">
-            <p>Blog categories</p>
+        <div class="products__numbers">
+          <div class="products__number-one">
+            <p>1</p>
           </div>
-          <div class="products__options">
-            <div class="products__options-one">
-              <p>View all</p>
-            </div>
-            <div class="products__options-two">
-              <p>Design</p>
-            </div>
-            <div class="products__options-three">
-              <p>Product</p>
-            </div>
-            <div class="products__options-four">
-              <p>Software Development</p>
-            </div>
-            <div class="products__options-five">
-              <p>Customer Success</p>
-            </div>
-            <div class="products__options-six">
-              <p>Leadership</p>
-            </div>
-            <div class="products__options-seven">
-              <p>Management</p>
-            </div>
+          <div class="products__number-one">
+            <p>2</p>
+          </div>
+          <div class="products__number-one">
+            <p>3</p>
+          </div>
+          <div class="products__number-one">
+            <p>...</p>
+          </div>
+          <div class="products__number-one">
+            <p>8</p>
+          </div>
+          <div class="products__number-one">
+            <p>9</p>
+          </div>
+          <div class="products__number-one">
+            <p>10</p>
           </div>
         </div>
-      </div>
-      <div class="products__cards">
-        <div class="products__cards-example">
-          <div class="products__card" *ngFor="let card of cardArray">
-            <img [src]="card.img" />
-            <div class="products__elements-one">
-              <div>
-                <h1>{{ card.title }}</h1>
-                <p>{{ card.paragrafe }}</p>
-              </div>
-              <div>
-                <button class="products__button-one">Read post</button>
-              </div>
-            </div>
+        <div class="products__button-finish">
+          <div>
+            <p>Next</p>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="products__pagination">
-      <div class="products__button-start">
-        <div>
-          <p>x</p>
-        </div>
-        <div>
-          <p>Previous</p>
-        </div>
-      </div>
-      <div class="products__numbers">
-        <div class="products__number-one">
-          <p>1</p>
-        </div>
-        <div class="products__number-one">
-          <p>2</p>
-        </div>
-        <div class="products__number-one">
-          <p>3</p>
-        </div>
-        <div class="products__number-one">
-          <p>...</p>
-        </div>
-        <div class="products__number-one">
-          <p>8</p>
-        </div>
-        <div class="products__number-one">
-          <p>9</p>
-        </div>
-        <div class="products__number-one">
-          <p>10</p>
-        </div>
-      </div>
-      <div class="products__button-finish">
-        <div>
-          <p>Next</p>
-        </div>
-        <div>
-          <p>x</p>
+          <div>
+            <p>x</p>
+          </div>
         </div>
       </div>
     </div>
