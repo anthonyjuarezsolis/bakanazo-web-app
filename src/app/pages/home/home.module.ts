@@ -10,12 +10,7 @@ import { HeaderComponent } from 'src/app/components/molecules/header/header.comp
 import { FooterComponent } from '../../components/molecules/footer/footer.component';
 import { DashboardComponent } from '../../components/molecules/dashboard/dashboard.component';
 import { HomeContentComponent } from 'src/app/components/templates/home-content/home-content.component';
-// import { MaterialComponentsComponent } from 'src/app/components/organisms/material-components/material-components.component';
-// import { BannerComponent } from 'src/app/components/molecules/banner/banner.component';
-// import { SaleComponent } from 'src/app/components/molecules/sale/sale.component';
-// import { ProductsComponent } from 'src/app/components/molecules/products/products.component';
-// import { TopComponent } from 'src/app/components/molecules/top/top.component';
-
+import { ProductsComponent } from '../../pages/products/products.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -31,11 +26,7 @@ import { HomeContentComponent } from 'src/app/components/templates/home-content/
     FooterComponent,
     DashboardComponent,
     HomeContentComponent,
-    // MaterialComponentsComponent,
-    // BannerComponent,
-    // ProductsComponent,
-    // SaleComponent,
-    // TopComponent,
+    ProductsComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
