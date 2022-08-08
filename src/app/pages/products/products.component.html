@@ -50,15 +50,18 @@
           </div>
           <div class="products__cards">
             <div class="products__cards-example">
-              <div class="products__card" *ngFor="let card of cardArray">
-                <img [src]="card.img" />
+              <div class="products__card" *ngFor="let card of arrayTest">
+                <div class="products__card--imgcontainer">
+                  <img [src]="card.img" />
+                </div>
                 <div class="products__elements-one">
                   <div>
-                    <h1>{{ card.title }}</h1>
-                    <p>{{ card.paragrafe }}</p>
+                    <h1>{{ card.name }}</h1>
+                    <!-- <p>{{ card.description }}</p> -->
                   </div>
                   <div>
-                    <button class="products__button-one">Read post</button>
+                    <h3>S/.{{card.price | number : '1.2-2'}}</h3>
+                    <small>Ver mas</small>
                   </div>
                 </div>
               </div>

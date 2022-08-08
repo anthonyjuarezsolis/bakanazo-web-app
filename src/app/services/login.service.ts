@@ -1,16 +1,16 @@
-import { Injectable, NgZone } from "@angular/core";
-import * as auth from "firebase/auth";
-import { AngularFireAuth } from "@angular/fire/compat/auth";
+import { Injectable, NgZone } from '@angular/core';
+import * as auth from 'firebase/auth';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 import {
   AngularFirestore,
   AngularFirestoreDocument,
-} from "@angular/fire/compat/firestore";
-import { Router } from "@angular/router";
-import { BehaviorSubject } from "rxjs";
-import { IUser } from "../interfaces/IUser";
+} from '@angular/fire/compat/firestore';
+import { Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
+import { IUser } from '../interfaces/IUser';
 
 @Injectable({
-  providedIn: "root",
+  providedIn: 'root',
 })
 export class LoginService {
   userData: IUser; // Save logged in user data
@@ -58,10 +58,10 @@ export class LoginService {
     };
 
     if (userData.email) {
-      localStorage.setItem("user", JSON.stringify(userData));
-      JSON.parse(localStorage.getItem("user")!);
+      localStorage.setItem('user', JSON.stringify(userData));
+      JSON.parse(localStorage.getItem('user')!);
       console.log(userData);
-      this.router.navigate(["home"]);
+      this.router.navigate(['home']);
 
       // return userRef.set(userData, {
       //   merge: true,
@@ -87,14 +87,12 @@ export class LoginService {
   // Sign out
   SignOut() {
     return this.afAuth.signOut().then(() => {
-      localStorage.removeItem("user");
-      this.router.navigate(["login"]);
+      localStorage.removeItem('user');
+      this.router.navigate(['login']);
     });
   }
 
   getList() {
-    return this.afs
-      .collection("anthonyjuarezsolis@gmail.com")
-      .snapshotChanges();
+    return this.afs.collection('products').snapshotChanges();
   }
 }
