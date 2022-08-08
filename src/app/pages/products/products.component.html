@@ -27,7 +27,8 @@
       <div class="products__end">
         <div class="products__room">
           <div class="products__sidebar">
-            <input class="products__search" placeholder="Buscar Producto" />
+            <input class="products__search" placeholder="Buscar Producto" (input)="onChange($event.target)"
+              (blur)="onBlur($event.target)" (keyup.enter)="onEnter($event, true)" />
             <!-- <div class="products__icon">x</div> -->
             <!-- <div class="products__text">
               <p>Buscar Producto</p>
@@ -40,11 +41,12 @@
               <ul class="products__options">
                 <a class="products__options-one"> Ver Todos </a>
                 <a class="products__options-one"> Tecnologia </a>
-                <a class="products__options-one"> Ropa </a>
-                <a class="products__options-one"> Especias / Condimento </a>
-                <a class="products__options-one"> Accesorios </a>
-                <a class="products__options-one"> Calzados </a>
-                <a class="products__options-one">Otros</a>
+                <a class="products__options-one">Electrodomesticos</a>
+                <!-- <a class="products__options-one"> Ropa </a> -->
+                <!-- <a class="products__options-one"> Especias / Condimento </a> -->
+                <!-- <a class="products__options-one"> Accesorios </a> -->
+                <!-- <a class="products__options-one"> Calzados </a> -->
+                <!-- <a class="products__options-one">Otros</a> -->
               </ul>
             </div>
           </div>

@@ -80,4 +80,18 @@ export class ProductsComponent implements OnInit {
         console.log(this.arrayTest);
       });
   }
+
+  onChange(target) {
+    // this.valueChanged.emit(target.value);
+    // this.copyToClipboard = target.value;
+    console.log('Onchange: ', target.value);
+  }
+  onBlur(target) {
+    // this.blurred.emit(target.value);
+    console.log('Onblur: ', target.value);
+  }
+  onEnter(event, value) {
+    // this.enter.emit(value || event.target.value);
+    console.log('Onenter: ', event.target.value, value);
+  }
 }
