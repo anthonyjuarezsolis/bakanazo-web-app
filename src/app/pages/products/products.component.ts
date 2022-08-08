@@ -101,9 +101,7 @@ export class ProductsComponent implements OnInit {
   onClick(textSearch: string) {
     this.arrFiltered = this.arrayTest.filter(({ category }) => {
       // console.log('category', category);
-
-      category === textSearch;
+      return category === textSearch;
     });
-    console.log(this.arrFiltered);
   }
 }
