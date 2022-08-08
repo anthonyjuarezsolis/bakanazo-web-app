@@ -27,8 +27,13 @@
       <div class="products__end">
         <div class="products__room">
           <div class="products__sidebar">
-            <input class="products__search" placeholder="Buscar Producto" (input)="onChange($event.target)"
-              (blur)="onBlur($event.target)" (keyup.enter)="onEnter($event, true)" />
+            <input
+              class="products__search"
+              placeholder="Buscar Producto"
+              (input)="onChange($event.target)"
+              (blur)="onBlur($event.target)"
+              (keyup.enter)="onEnter($event, true)"
+            />
             <!-- <div class="products__icon">x</div> -->
             <!-- <div class="products__text">
               <p>Buscar Producto</p>
@@ -40,8 +45,17 @@
               </div>
               <ul class="products__options">
                 <a class="products__options-one"> Ver Todos </a>
-                <a class="products__options-one"> Tecnologia </a>
-                <a class="products__options-one">Electrodomesticos</a>
+                <a
+                  class="products__options-one"
+                  (click)="onClick('tecnologia')"
+                >
+                  Tecnologia
+                </a>
+                <a
+                  class="products__options-one"
+                  (click)="onClick('Electrodomésticos')"
+                  >Electrodomesticos</a
+                >
                 <!-- <a class="products__options-one"> Ropa </a> -->
                 <!-- <a class="products__options-one"> Especias / Condimento </a> -->
                 <!-- <a class="products__options-one"> Accesorios </a> -->
@@ -50,9 +64,12 @@
               </ul>
             </div>
           </div>
-          <div class="products__cards">
+          <div class="products__cards" *ngIf="arrFiltered.length === 0">
             <div class="products__cards-example">
-              <div class="products__card" *ngFor="let card of arrayTest">
+              <div
+                class="products__card"
+                *ngFor="let card of arrayTest | search: searchInput"
+              >
                 <div class="products__card--imgcontainer">
                   <img [src]="card.img" />
                 </div>
@@ -62,7 +79,29 @@
                     <!-- <p>{{ card.description }}</p> -->
                   </div>
                   <div>
-                    <h3>S/.{{card.price | number : '1.2-2'}}</h3>
+                    <h3>S/.{{ card.price | number: "1.2-2" }}</h3>
+                    <small>Ver mas</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__cards" *ngIf="arrFiltered.length > 0">
+            <div class="products__cards-example">
+              <div
+                class="products__card"
+                *ngFor="let card of arrFiltered | search: searchInput"
+              >
+                <div class="products__card--imgcontainer">
+                  <img [src]="card.img" />
+                </div>
+                <div class="products__elements-one">
+                  <div>
+                    <h1>{{ card.name }}</h1>
+                    <!-- <p>{{ card.description }}</p> -->
+                  </div>
+                  <div>
+                    <h3>S/.{{ card.price | number: "1.2-2" }}</h3>
                     <small>Ver mas</small>
                   </div>
                 </div>

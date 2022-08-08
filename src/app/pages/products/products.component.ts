@@ -10,6 +10,8 @@ import { LoginService } from 'src/app/services/login.service';
 export class ProductsComponent implements OnInit {
   public cardArray = [];
   public arrayTest = [];
+  public arrFiltered = [];
+  public searchInput: string;
 
   constructor(public loginService: LoginService) {}
 
@@ -85,13 +87,23 @@ export class ProductsComponent implements OnInit {
     // this.valueChanged.emit(target.value);
     // this.copyToClipboard = target.value;
     console.log('Onchange: ', target.value);
+    this.searchInput = target.value;
+    // this.onSearch(target.value);
   }
   onBlur(target) {
     // this.blurred.emit(target.value);
-    console.log('Onblur: ', target.value);
+    // console.log('Onblur: ', target.value);
   }
   onEnter(event, value) {
     // this.enter.emit(value || event.target.value);
-    console.log('Onenter: ', event.target.value, value);
+    // console.log('Onenter: ', event.target.value, value);
+  }
+  onClick(textSearch: string) {
+    this.arrFiltered = this.arrayTest.filter(({ category }) => {
+      // console.log('category', category);
+
+      category === textSearch;
+    });
+    console.log(this.arrFiltered);
   }
 }
