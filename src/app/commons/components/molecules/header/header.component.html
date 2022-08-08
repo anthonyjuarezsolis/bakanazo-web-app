@@ -5,19 +5,23 @@
         <img src="./assets/svg/bakanazo-dark.svg" />
       </div>
       <div class="header__options">
-        <p>Inicio</p>
-        <p>Productos</p>
+        <p (click)="redirectTo('home')">Inicio</p>
+        <p (click)="redirectTo('products')">Productos</p>
         <p>Contactanos</p>
         <p>Envios</p>
       </div>
     </div>
     <div class="header__loggin" *ngIf="userLogged">
       <div class="header__loggin--photo">
-        <img [src]=" userLogged.photoURL" [alt]='"image-"+userLogged.name' (click)="toLogout()">
+        <img
+          [src]="userLogged.photoURL"
+          [alt]="'image-' + userLogged.name"
+          (click)="toLogout()"
+        />
       </div>
-      <div class=" header__loggin--info">
-        <strong>{{userLogged.displayName}}</strong>
-        <p>{{userLogged.email}}</p>
+      <div class="header__loggin--info">
+        <strong>{{ userLogged.displayName }}</strong>
+        <p>{{ userLogged.email }}</p>
       </div>
     </div>
     <div class="header__loggin" *ngIf="!userLogged">

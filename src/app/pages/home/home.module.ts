@@ -1,33 +1,13 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HomeComponent } from './home.component';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
+import { HomeComponent } from "./home.component";
 
-import { HomePageRoutingModule } from './home-routing.module';
-import { MaterialModule } from 'src/app/material/material.module';
-import { HeaderComponent } from 'src/app/components/molecules/header/header.component';
-import { FooterComponent } from '../../components/molecules/footer/footer.component';
-import { DashboardComponent } from '../../components/molecules/dashboard/dashboard.component';
-import { HomeContentComponent } from 'src/app/components/templates/home-content/home-content.component';
-import { ProductsComponent } from '../../pages/products/products.component';
+import { HomePageRoutingModule } from "./home-routing.module";
+import { HomeContentComponent } from "src/app/commons/components/templates/home-content/home-content.component";
+import { BakanazoCommonsModule } from "src/app/commons/commons.module";
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule,
-    MaterialModule,
-    ReactiveFormsModule,
-  ],
-  declarations: [
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent,
-    DashboardComponent,
-    HomeContentComponent,
-    ProductsComponent,
-  ],
+  declarations: [HomeComponent, HomeContentComponent],
+  imports: [BakanazoCommonsModule, HomePageRoutingModule],
+  exports: [BakanazoCommonsModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomePageModule {}

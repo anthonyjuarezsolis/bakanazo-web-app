@@ -14,7 +14,7 @@
   }
   &__start {
     width: 100%;
-    padding: 96px 112px;
+    padding: 96px 112px 0 112px;
   }
   &__start-container {
     gap: 40px;
@@ -124,6 +124,7 @@
     gap: 8px;
     width: 280px;
     height: 44px;
+    outline: none;
   }
 
   &__text {
@@ -157,86 +158,17 @@
     gap: 8px;
 
     &-one {
-      width: 280px;
-      height: 44px;
-      padding: 10px 14px;
-      background: colors.$primary50;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      & p {
-        font-family: "Inter-medium";
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
+      margin: 10px 14px;
+
+      font-family: "Inter-medium";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: colors.$gray500;
+      cursor: pointer;
+      &:hover {
         color: colors.$primary700;
-        cursor: pointer;
-      }
-    }
-    &-two {
-      padding: 10px 14px;
-      & p {
-        font-family: "Inter-medium";
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        color: colors.$gray500;
-        cursor: pointer;
-      }
-    }
-    &-three {
-      padding: 10px 14px;
-      & p {
-        font-family: "Inter-medium";
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        color: colors.$gray500;
-        cursor: pointer;
-      }
-    }
-    &-four {
-      padding: 10px 14px;
-      & p {
-        font-family: "Inter-medium";
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        color: colors.$gray500;
-        cursor: pointer;
-      }
-    }
-    &-five {
-      padding: 10px 14px;
-      & p {
-        font-family: "Inter-medium";
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        color: colors.$gray500;
-        cursor: pointer;
-      }
-    }
-    &-six {
-      padding: 10px 14px;
-      & p {
-        font-family: "Inter-medium";
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        color: colors.$gray500;
-        cursor: pointer;
-      }
-    }
-    &-seven {
-      padding: 10px 14px;
-      & p {
-        font-family: "Inter-medium";
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        color: colors.$gray500;
-        cursor: pointer;
+        background: colors.$primary50;
       }
     }
   }
@@ -314,6 +246,11 @@
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
     border: 1px solid #d0d5dd;
+
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
   }
   &__numbers {
     display: flex;
@@ -351,11 +288,12 @@
     width: 88px;
     height: 36px;
 
-    & p {
-      font-family: "Inter-medium";
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-    }
+    // & p {
+    font-family: "Inter-medium";
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    // }
   }
 }
