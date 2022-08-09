@@ -44,7 +44,9 @@
                 <p>Categorias</p>
               </div>
               <ul class="products__options">
-                <a class="products__options-one"> Ver Todos </a>
+                <a class="products__options-one" (click)="onClick('')">
+                  Ver Todos
+                </a>
                 <a
                   class="products__options-one"
                   (click)="onClick('tecnologia')"
@@ -53,7 +55,7 @@
                 </a>
                 <a
                   class="products__options-one"
-                  (click)="onClick('Electrodomésticos')"
+                  (click)="onClick('electrodomésticos')"
                   >Electrodomesticos</a
                 >
                 <!-- <a class="products__options-one"> Ropa </a> -->
@@ -64,12 +66,9 @@
               </ul>
             </div>
           </div>
-          <div class="products__cards" *ngIf="arrFiltered.length === 0">
+          <div class="products__cards" *ngIf="arrFiltered.length > 0">
             <div class="products__cards-example">
-              <div
-                class="products__card"
-                *ngFor="let card of arrayTest | search: searchInput"
-              >
+              <div class="products__card" *ngFor="let card of arrFiltered">
                 <div class="products__card--imgcontainer">
                   <img [src]="card.img" />
                 </div>
@@ -86,26 +85,17 @@
               </div>
             </div>
           </div>
-          <div class="products__cards" *ngIf="arrFiltered.length > 0">
-            <div class="products__cards-example">
-              <div
-                class="products__card"
-                *ngFor="let card of arrFiltered | search: searchInput"
+          <div class="products__cards" *ngIf="arrFiltered.length === 0">
+            <div class="products__error">
+              <lord-icon
+                src="https://cdn.lordicon.com/vqmupdxd.json"
+                trigger="loop"
+                style="width: 100px; height: 100px"
+                colors="primary:#2516c7,secondary:#000000"
               >
-                <div class="products__card--imgcontainer">
-                  <img [src]="card.img" />
-                </div>
-                <div class="products__elements-one">
-                  <div>
-                    <h1>{{ card.name }}</h1>
-                    <!-- <p>{{ card.description }}</p> -->
-                  </div>
-                  <div>
-                    <h3>S/.{{ card.price | number: "1.2-2" }}</h3>
-                    <small>Ver mas</small>
-                  </div>
-                </div>
-              </div>
+              </lord-icon>
+
+              <p>Sin resultados</p>
             </div>
           </div>
         </div>

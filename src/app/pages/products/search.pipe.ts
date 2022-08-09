@@ -8,7 +8,11 @@ export class SearchPipe implements PipeTransform {
       return languages;
     }
     // searchInput = searchInput;
-    console.log(searchInput.toLowerCase());
-    return languages.filter((x) => x.name.includes(searchInput.toUpperCase()));
+    console.log('jamon:', searchInput.toUpperCase());
+    console.log(
+      'jamon2:',
+      languages.filter((x) => x.name.includes(searchInput.toUpperCase()))
+    );
+    return languages.filter((x) => x.name.includes(searchInput));
   }
 }
