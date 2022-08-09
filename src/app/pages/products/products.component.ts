@@ -26,7 +26,6 @@ export class ProductsComponent implements OnInit {
       .subscribe((data) => {
         this.arrayTest = data;
         this.arrFiltered = this.arrayTest;
-        console.log(this.arrayTest);
       });
   }
 
@@ -51,11 +50,6 @@ export class ProductsComponent implements OnInit {
     if (!searchInput) {
       return languages;
     }
-    console.log('jamon:', searchInput.toUpperCase());
-    console.log(
-      'jamon2:',
-      languages.filter((x) => x.name.includes(searchInput.toUpperCase()))
-    );
 
     return (this.arrFiltered = languages.filter((x) =>
       x.name.includes(searchInput)
